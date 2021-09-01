@@ -11,8 +11,7 @@
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-  <!-- <base href="../docs/index.html"> -->
-  <base href="/">
+  <base href="./">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -23,18 +22,16 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="totalcross_ui_project">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-  <link rel="stylesheet" type="text/css" href="style.css">
 
   <title>totalcross_ui_project</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div class="center">
-    <div class="text">LOADING</div>
-    <div class="ring"></div>
-</div>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = null;
+    var serviceWorkerVersion = '3492974084';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
