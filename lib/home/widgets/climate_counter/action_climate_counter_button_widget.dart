@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:totalcross/theme/colors.dart';
-import 'package:totalcross/util/layout_util.dart';
 
 class ActionClimateCounterButtonWidget extends StatelessWidget {
   final void Function() onTap;
@@ -16,24 +14,13 @@ class ActionClimateCounterButtonWidget extends StatelessWidget {
       child: isAdd
           ? Image.asset(
               "assets/images/plus.png",
-              scale: 1.2,
+              scale: MediaQuery.of(context).size.width <= 320 ? 1.6 : 1.2
             )
           : Image.asset(
               "assets/images/minus.png",
-              scale: 1.2,
+              scale: MediaQuery.of(context).size.width <= 320 ? 1.6 : 1.2,
             ),
 
-      //  CircleAvatar(
-      //   radius: LayoutUtil.resizeContent(16, context),
-
-      //   backgroundColor: ColorUtil.primaryColor,
-      //   child: Center(
-      //     child: Icon(
-      //       icon,
-      //       size: LayoutUtil.resizeContent(18, context),
-      //     ),
-      //   ),
-      // ),
     );
   }
 }
