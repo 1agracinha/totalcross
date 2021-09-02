@@ -3,8 +3,37 @@ import 'package:flutter/material.dart';
 import 'package:totalcross/theme/colors.dart';
 import 'package:totalcross/util/layout_util.dart';
 
-Padding circularClimateCounterWidget(BuildContext context,
+Widget circularClimateCounterWidget(BuildContext context,
     {required int climateValue}) {
+  return Stack(
+    alignment: Alignment.center,
+    children: [
+      Align(
+        alignment: Alignment.center,
+        child: Image.asset(
+          "assets/images/term.png",
+          scale: 1.5,
+        ),
+      ),
+      Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            "$climateValue",
+            style: TextStyle(
+              fontSize: LayoutUtil.resizeContent(44, context),
+            ),
+          ),
+          Text(
+            "Climate",
+            style: TextStyle(
+              fontSize: LayoutUtil.resizeContent(12, context),
+            ),
+          )
+        ],
+      ),
+    ],
+  );
   return Padding(
     padding: EdgeInsets.all(LayoutUtil.resizeContent(20, context)),
     child: DottedBorder(
