@@ -14,14 +14,16 @@ class _ClimateCounterWidgetState extends State<ClimateCounterWidget> {
   Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.center,
-      child: Wrap(
-        crossAxisAlignment: WrapCrossAlignment.center,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ActionClimateCounterButtonWidget(
-              onTap: () => _decrementClimateValue(), icon: Icons.remove),
+              isAdd: false,
+              onTap: () => _decrementClimateValue(),
+              icon: Icons.remove),
           circularClimateCounterWidget(context, climateValue: climateValue),
           ActionClimateCounterButtonWidget(
-              onTap: () => _incrementClimateValue())
+              isAdd: true, onTap: () => _incrementClimateValue())
         ],
       ),
     );

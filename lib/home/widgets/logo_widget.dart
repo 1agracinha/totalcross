@@ -10,10 +10,8 @@ class LogoWidget extends StatelessWidget {
         margin: EdgeInsets.only(
             left: MediaQuery.of(context).size.width * 0.08,
             top: MediaQuery.of(context).size.height * 0.07),
-        child: Image.asset(
-          "assets/images/totalcross-logo.png",
-          scale: LayoutUtil.isTablet(context) ? 2 : 3,
-        ),
+        child: Image.asset("assets/images/logo_oficial_horizontal_branca.png",
+            scale: LayoutUtil.isTablet(context) ? 7 : 8),
       ),
     );
   }

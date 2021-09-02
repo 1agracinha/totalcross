@@ -11,13 +11,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  bool isTurnOn = true;
+  bool isDayOn = true;
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         BackgroundWidget(
-          isTurnOn: isTurnOn,
+          isTurnOn: isDayOn,
         ),
         LogoWidget(),
         ClimateCounterWidget(),
@@ -39,31 +39,21 @@ class _HomePageState extends State<HomePage> {
             PowerButtonWidget(
               icon: Icons.light_mode_outlined,
               label: "On",
-              isTurnOn: isTurnOn,
-              onTap: turnOn,
+              isDayOn: isDayOn,
+              onTap: _isDayOn,
             ),
-            PowerButtonWidget(
-              icon: Icons.dark_mode_outlined,
-              label: "Off",
-              isTurnOn: !isTurnOn,
-              onTap: turnOff,
-              isLightOption: false,
-            )
+            
           ],
         ),
       ),
     );
   }
 
-  void turnOn() {
+  void _isDayOn() {
     setState(() {
-      isTurnOn = true;
+      isDayOn = !isDayOn;
     });
   }
 
-  void turnOff() {
-    setState(() {
-      isTurnOn = false;
-    });
-  }
+  
 }
