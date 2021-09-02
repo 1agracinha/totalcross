@@ -47,9 +47,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/dark.png
-    - assets/images/light.png
-    - assets/images/totalcross-logo.png
+    - assets/images/b_day.png
+    - assets/images/b_night.png
+    - assets/images/logo_oficial_horizontal_branca.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

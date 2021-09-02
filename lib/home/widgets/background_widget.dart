@@ -13,8 +13,8 @@ class BackgroundWidget extends StatelessWidget {
       decoration: BoxDecoration(
         image: DecorationImage(
           image: isTurnOn
-              ? AssetImage('assets/images/light.png')
-              : AssetImage('assets/images/dark.png'),
+              ? AssetImage('assets/images/b_day.png')
+              : AssetImage('assets/images/b_night.png'),
           fit: BoxFit.cover,
         ),
       ),
