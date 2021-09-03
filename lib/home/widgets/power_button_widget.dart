@@ -31,11 +31,11 @@ class PowerButtonWidget extends StatelessWidget {
           child: isDayOn
               ? Image.asset(
                   "assets/images/on_day.png",
-                  scale: MediaQuery.of(context).size.width <= 320 ? 2 : 1.6,
+                  scale: MediaQuery.of(context).size.width <= 320 ? 2.2 : 2,
                 )
               : Image.asset(
                   "assets/images/on_night.png",
-                  scale: MediaQuery.of(context).size.width <= 320 ? 2 : 1.6,
+                  scale: MediaQuery.of(context).size.width <= 320 ? 2 : 2,
                 ),
         ),
         GestureDetector(
@@ -45,11 +45,11 @@ class PowerButtonWidget extends StatelessWidget {
             child: isDayOn
                 ? Image.asset(
                     "assets/images/off_day.png",
-                    scale: MediaQuery.of(context).size.width <= 320 ? 2 : 1.6,
+                    scale: MediaQuery.of(context).size.width <= 320 ? 2.2 : 2,
                   )
                 : Image.asset(
                     "assets/images/off_night.png",
-                    scale: MediaQuery.of(context).size.width <= 320 ? 2 : 1.6,
+                    scale: MediaQuery.of(context).size.width <= 320 ? 2.2 : 2,
                   )),
       ],
     );
