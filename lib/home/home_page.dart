@@ -33,17 +33,12 @@ class _HomePageState extends State<HomePage> {
         margin: LayoutUtil.isTablet(context)
             ? EdgeInsets.zero
             : EdgeInsets.only(
-                bottom: MediaQuery.of(context).size.height * 0.18),
-        child: Wrap(
-          children: [
-            PowerButtonWidget(
-              icon: Icons.light_mode_outlined,
-              label: "On",
-              isDayOn: isDayOn,
-              onTap: _isDayOn,
-            ),
-            
-          ],
+                bottom: MediaQuery.of(context).size.height * 0.14),
+        child: PowerButtonWidget(
+          icon: Icons.light_mode_outlined,
+          label: "On",
+          isDayOn: isDayOn,
+          onTap: _isDayOn,
         ),
       ),
     );

@@ -14,11 +14,11 @@ class ActionClimateCounterButtonWidget extends StatelessWidget {
       child: isAdd
           ? Image.asset(
               "assets/images/plus.png",
-              scale: MediaQuery.of(context).size.width <= 320 ? 1.6 : 1.2
+              scale: MediaQuery.of(context).size.width <= 320 ? 1.8 : 1.4,
             )
           : Image.asset(
               "assets/images/minus.png",
-              scale: MediaQuery.of(context).size.width <= 320 ? 1.6 : 1.2,
+              scale: MediaQuery.of(context).size.width <= 320 ? 1.8 : 1.4,
             ),
 
     );
