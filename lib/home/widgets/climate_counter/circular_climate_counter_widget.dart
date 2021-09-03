@@ -19,7 +19,7 @@ Widget circularClimateCounterWidget(BuildContext context,
           Text(
             "$climateValue",
             style: TextStyle(
-              fontSize: LayoutUtil.resizeContent(44, context),
+              fontSize: LayoutUtil.isTablet(context) ? LayoutUtil.resizeContent(48, context) : LayoutUtil.resizeContent(62, context),
               color: Colors.grey[600]
 
             ),
